@@ -1,0 +1,99 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content_title %}<center><h3> Home Page </h3></center>{% endblock %}  
+{% block content %}
+<div class="content-wrapper">
+	<div class="table-responsive">
+		<table class="table table-bordered table-striped">
+			<thead class="thead-dark">
+				<tr>
+					<td colspan="5">
+						<h4 class='pull-left'> List of IBAN Numbers </h4>
+						<a href="/createiban/" class="pull-right btn btn-info" role="button">Add New Iban</a>
+					</td>
+				</tr>
+				<tr>
+					<th>First Name</th>
+					<th>Last Name</th>
+					<th>IBAN Number</th>
+					<th>Added Date</th>
+					<th>Action</th>
+				</tr>
+			</thead>
+			<tbody>
+			{% for object in object_list %}
+				<tr>
+					<td>{{object.first_name}}</td>
+					<td>{{object.last_name}}</td>
+					<td>{{object.iban_number}}</td>
+					<td>{{object.created_at|date:"d.m.Y"}}</td>
+					<td><a href="/updateiban/{{object.pk}}" class="btn btn-primary btn-xs">
+							<span class="glyphicon glyphicon-pencil"></span>
+						</a>
+
+						<a href="/deleteiban/{{object.pk}}" data-remote="false" data-toggle="modal" data-target="#modalconfirm" class="btn btn-danger btn-xs">
+							<span class="glyphicon glyphicon-trash"></span>
+						</a></td>
+				</tr>
+			{% endfor %}
+			{% if object_list.count == 0 %}
+			<tr>
+				<td colspan="4">						
+					<center><strong> No IBAN Numbers are added yet. </strong></center>						
+				</td>
+			</tr>
+			{% endif %}
+			</tbody>
+		</table>
+		{% if page_obj.has_other_pages %}
+			<ul class="pagination">
+				{% if page_obj.has_previous %}
+					<li><a href="?page={{ page_obj.previous_page_number }}">&laquo;</a></li>
+				{% else %}
+					<li class="disabled"><span>&laquo;</span></li>
+				{% endif %}
+				{% for i in page_obj.paginator.page_range %}
+				{% if page_obj.number == i %}
+					<li class="active"><span>{{ i }} <span class="sr-only">(current)</span></span></li>
+				{% else %}
+					<li><a href="?page={{ i }}">{{ i }}</a></li>
+				{% endif %}
+				{% endfor %}
+				{% if page_obj.has_next %}
+					<li><a href="?page={{ page_obj.next_page_number }}">&raquo;</a></li>
+				{% else %}
+					<li class="disabled"><span>&raquo;</span></li>
+				{% endif %}
+			</ul>
+		{% endif %}
+	</div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="modalconfirm" tabindex="-1" role="dialog" aria-labelledby="modalconfirmLabel" aria-hidden="true">
+	<div class="modal-dialog modal-lg">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+				<h4 class="modal-title" id="myModalLabel">  </h4>
+			</div>
+			<div class="modal-body"> {% csrf_token %}
+
+			</div>
+		</div><!-- /.modal-content -->
+	</div><!-- /.modal-dialog -->
+</div>
+<!-- /.modal -->
+
+{% endblock content %}
+{% block bootstrap_admin_js %}
+    {{block.super}}
+	<script>
+		$(document).ready(function(){
+			$("#modalconfirm").on("show.bs.modal", function(e) {
+				var link = $(e.relatedTarget);
+				$(this).find(".modal-body").load(link.attr("href"));
+			});
+		});
+	</script>
+{% endblock bootstrap_admin_js %}

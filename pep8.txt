@@ -1,0 +1,234 @@
+./oauth/admin.py:6:1: E302 expected 2 blank lines, found 1
+./oauth/admin.py:10:43: E203 whitespace before ','
+./oauth/admin.py:10:66: E202 whitespace before ')'
+./oauth/admin.py:15:53: E203 whitespace before ','
+./oauth/admin.py:27:37: W292 no newline at end of file
+./oauth/models.py:8:1: E302 expected 2 blank lines, found 1
+./oauth/models.py:20:39: W292 no newline at end of file
+./oauth/tests.py:15:1: E302 expected 2 blank lines, found 1
+./oauth/tests.py:47:59: W291 trailing whitespace
+./oauth/tests.py:50:67: E231 missing whitespace after ','
+./oauth/tests.py:56:67: E231 missing whitespace after ','
+./oauth/tests.py:64:67: E231 missing whitespace after ','
+./oauth/tests.py:71:67: E231 missing whitespace after ','
+./oauth/tests.py:77:67: E231 missing whitespace after ','
+./oauth/views.py:16:1: E302 expected 2 blank lines, found 1
+./oauth/views.py:28:46: E231 missing whitespace after ','
+./oauth/views.py:46:36: E231 missing whitespace after ','
+./oauth/views.py:59:43: E261 at least two spaces before inline comment
+./oauth/views.py:59:43: E262 inline comment should start with '# '
+./oauth/views.py:62:63: E251 unexpected spaces around keyword / parameter equals
+./oauth/views.py:62:65: E251 unexpected spaces around keyword / parameter equals
+./oauth/views.py:63:41: E128 continuation line under-indented for visual indent
+./oauth/views.py:63:50: E251 unexpected spaces around keyword / parameter equals
+./oauth/views.py:63:52: E251 unexpected spaces around keyword / parameter equals
+./oauth/views.py:64:41: E128 continuation line under-indented for visual indent
+./oauth/views.py:65:41: E128 continuation line under-indented for visual indent
+./oauth/views.py:66:41: E128 continuation line under-indented for visual indent
+./oauth/views.py:67:41: E128 continuation line under-indented for visual indent
+./oauth/views.py:92:55: E231 missing whitespace after ','
+./oauth/views.py:97:79: E251 unexpected spaces around keyword / parameter equals
+./oauth/views.py:97:81: E251 unexpected spaces around keyword / parameter equals
+./oauth/views.py:117:65: E231 missing whitespace after ','
+./oauth/views.py:118:71: E231 missing whitespace after ','
+./oauth/views.py:121:79: E251 unexpected spaces around keyword / parameter equals
+./oauth/views.py:121:81: E251 unexpected spaces around keyword / parameter equals
+./oauth/views.py:123:70: E231 missing whitespace after ','
+./oauth/views.py:128:34: E231 missing whitespace after ','
+./oauth/views.py:128:40: E261 at least two spaces before inline comment
+./oauth/views.py:128:40: E262 inline comment should start with '# '
+./oauth/views.py:131:83: E251 unexpected spaces around keyword / parameter equals
+./oauth/views.py:131:85: E251 unexpected spaces around keyword / parameter equals
+./oauth/views.py:134:75: E251 unexpected spaces around keyword / parameter equals
+./oauth/views.py:134:77: E251 unexpected spaces around keyword / parameter equals
+./oauth/views.py:136:1: E302 expected 2 blank lines, found 1
+./oauth/views.py:139:1: E302 expected 2 blank lines, found 1
+./oauth/views.py:142:1: E302 expected 2 blank lines, found 1
+./oauth/views.py:145:1: E302 expected 2 blank lines, found 1
+./oauth/views.py:146:46: W292 no newline at end of file
+./ibanproject/messagestext.py:2:22: E231 missing whitespace after ':'
+./ibanproject/messagestext.py:6:22: E231 missing whitespace after ':'
+./ibanproject/messagestext.py:7:19: E231 missing whitespace after ':'
+./ibanproject/messagestext.py:8:19: E231 missing whitespace after ':'
+./ibanproject/messagestext.py:9:19: E231 missing whitespace after ':'
+./ibanproject/messagestext.py:13:23: E231 missing whitespace after ':'
+./ibanproject/messagestext.py:14:24: E231 missing whitespace after ':'
+./ibanproject/messagestext.py:19:2: W292 no newline at end of file
+./ibanproject/settings.py:29:29: E231 missing whitespace after ','
+./ibanproject/settings.py:137:27: E261 at least two spaces before inline comment
+./ibanproject/settings.py:137:28: E262 inline comment should start with '# '
+./ibanproject/settings.py:153:32: E225 missing whitespace around operator
+./ibanproject/settings.py:155:68: W292 no newline at end of file
+./ibanproject/urls.py:47:33: W292 no newline at end of file
+./ibanproject/GoogleOAuth/Google.py:39:95: W291 trailing whitespace
+./ibanproject/GoogleOAuth/Google.py:44:37: W291 trailing whitespace
+./ibanproject/GoogleOAuth/Google.py:65:63: W291 trailing whitespace
+./ibanproject/GoogleOAuth/Google.py:67:102: W291 trailing whitespace
+./ibanproject/GoogleOAuth/Google.py:76:37: W291 trailing whitespace
+./ibanmanagment/admin.py:6:1: E302 expected 2 blank lines, found 1
+./ibanmanagment/admin.py:9:28: E231 missing whitespace after ','
+./ibanmanagment/admin.py:9:41: E231 missing whitespace after ','
+./ibanmanagment/admin.py:9:56: E231 missing whitespace after ','
+./ibanmanagment/admin.py:9:66: E231 missing whitespace after ','
+./ibanmanagment/admin.py:10:33: E231 missing whitespace after ','
+./ibanmanagment/admin.py:10:45: E231 missing whitespace after ','
+./ibanmanagment/admin.py:10:59: E231 missing whitespace after ','
+./ibanmanagment/admin.py:10:69: E231 missing whitespace after ','
+./ibanmanagment/admin.py:11:70: W292 no newline at end of file
+./ibanmanagment/forms.py:5:1: E302 expected 2 blank lines, found 0
+./ibanmanagment/forms.py:26:31: E231 missing whitespace after ','
+./ibanmanagment/forms.py:26:43: E231 missing whitespace after ','
+./ibanmanagment/forms.py:27:32: E231 missing whitespace after ','
+./ibanmanagment/forms.py:30:25: E231 missing whitespace after ':'
+./ibanmanagment/forms.py:30:56: E231 missing whitespace after ':'
+./ibanmanagment/forms.py:31:24: E231 missing whitespace after ':'
+./ibanmanagment/forms.py:31:55: E231 missing whitespace after ':'
+./ibanmanagment/forms.py:32:26: E231 missing whitespace after ':'
+./ibanmanagment/forms.py:32:57: E231 missing whitespace after ':'
+./ibanmanagment/forms.py:35:25: E231 missing whitespace after ':'
+./ibanmanagment/forms.py:36:27: E231 missing whitespace after ':'
+./ibanmanagment/forms.py:38:24: E231 missing whitespace after ':'
+./ibanmanagment/forms.py:39:27: E231 missing whitespace after ':'
+./ibanmanagment/forms.py:41:26: E231 missing whitespace after ':'
+./ibanmanagment/forms.py:42:27: E231 missing whitespace after ':'
+./ibanmanagment/forms.py:45:5: E301 expected 1 blank line, found 0
+./ibanmanagment/forms.py:46:52: W292 no newline at end of file
+./ibanmanagment/models.py:5:1: E302 expected 2 blank lines, found 1
+./ibanmanagment/models.py:8:50: E231 missing whitespace after ','
+./ibanmanagment/models.py:18:22: E231 missing whitespace after ','
+./ibanmanagment/models.py:25:45: W292 no newline at end of file
+./ibanmanagment/views.py:17:1: E302 expected 2 blank lines, found 1
+./ibanmanagment/views.py:19:42: W291 trailing whitespace
+./ibanmanagment/views.py:22:38: E261 at least two spaces before inline comment
+./ibanmanagment/views.py:22:39: E262 inline comment should start with '# '
+./ibanmanagment/views.py:28:77: W291 trailing whitespace
+./ibanmanagment/views.py:29:49: W291 trailing whitespace
+./ibanmanagment/views.py:36:1: E302 expected 2 blank lines, found 1
+./ibanmanagment/views.py:40:32: E231 missing whitespace after ','
+./ibanmanagment/views.py:40:44: E231 missing whitespace after ','
+./ibanmanagment/views.py:43:68: E261 at least two spaces before inline comment
+./ibanmanagment/views.py:43:69: E262 inline comment should start with '# '
+./ibanmanagment/views.py:44:74: E231 missing whitespace after ','
+./ibanmanagment/views.py:44:93: E231 missing whitespace after ','
+./ibanmanagment/views.py:44:100: E261 at least two spaces before inline comment
+./ibanmanagment/views.py:44:101: E262 inline comment should start with '# '
+./ibanmanagment/views.py:45:31: E231 missing whitespace after ','
+./ibanmanagment/views.py:46:56: E231 missing whitespace after ','
+./ibanmanagment/views.py:47:1: W293 blank line contains whitespace
+./ibanmanagment/views.py:49:50: E261 at least two spaces before inline comment
+./ibanmanagment/views.py:49:51: E262 inline comment should start with '# '
+./ibanmanagment/views.py:53:1: E302 expected 2 blank lines, found 1
+./ibanmanagment/views.py:71:1: W293 blank line contains whitespace
+./ibanmanagment/views.py:72:68: E261 at least two spaces before inline comment
+./ibanmanagment/views.py:72:69: E262 inline comment should start with '# '
+./ibanmanagment/views.py:73:77: E231 missing whitespace after ','
+./ibanmanagment/views.py:73:96: E231 missing whitespace after ','
+./ibanmanagment/views.py:73:103: E261 at least two spaces before inline comment
+./ibanmanagment/views.py:73:104: E262 inline comment should start with '# '
+./ibanmanagment/views.py:74:31: E231 missing whitespace after ','
+./ibanmanagment/views.py:75:56: E231 missing whitespace after ','
+./ibanmanagment/views.py:81:1: E302 expected 2 blank lines, found 1
+./ibanmanagment/views.py:86:68: E261 at least two spaces before inline comment
+./ibanmanagment/views.py:86:69: E262 inline comment should start with '# '
+./ibanmanagment/views.py:87:77: E231 missing whitespace after ','
+./ibanmanagment/views.py:87:96: E231 missing whitespace after ','
+./ibanmanagment/views.py:87:103: E261 at least two spaces before inline comment
+./ibanmanagment/views.py:87:104: E262 inline comment should start with '# '
+./ibanmanagment/views.py:88:31: E231 missing whitespace after ','
+./ibanmanagment/views.py:89:56: E231 missing whitespace after ','
+./ibanmanagment/views.py:108:73: E261 at least two spaces before inline comment
+./ibanmanagment/views.py:108:74: E262 inline comment should start with '# '
+./ibanmanagment/views.py:108:134: W291 trailing whitespace
+./ibanmanagment/views.py:111:1: E302 expected 2 blank lines, found 1
+./ibanmanagment/views.py:125:1: W293 blank line contains whitespace
+./ibanmanagment/views.py:134:41: W292 no newline at end of file
+./ibanmanagment/tests/tests_create_update_delete_views.py:8:1: E302 expected 2 blank lines, found 1
+./ibanmanagment/tests/tests_create_update_delete_views.py:9:1: W293 blank line contains whitespace
+./ibanmanagment/tests/tests_create_update_delete_views.py:16:59: E231 missing whitespace after ','
+./ibanmanagment/tests/tests_create_update_delete_views.py:16:85: E231 missing whitespace after ','
+./ibanmanagment/tests/tests_create_update_delete_views.py:19:82: E261 at least two spaces before inline comment
+./ibanmanagment/tests/tests_create_update_delete_views.py:19:83: E262 inline comment should start with '# '
+./ibanmanagment/tests/tests_create_update_delete_views.py:25:82: E261 at least two spaces before inline comment
+./ibanmanagment/tests/tests_create_update_delete_views.py:25:83: E262 inline comment should start with '# '
+./ibanmanagment/tests/tests_create_update_delete_views.py:31:82: E261 at least two spaces before inline comment
+./ibanmanagment/tests/tests_create_update_delete_views.py:31:83: E262 inline comment should start with '# '
+./ibanmanagment/tests/tests_create_update_delete_views.py:41:59: E231 missing whitespace after ','
+./ibanmanagment/tests/tests_create_update_delete_views.py:41:85: E231 missing whitespace after ','
+./ibanmanagment/tests/tests_create_update_delete_views.py:46:52: E261 at least two spaces before inline comment
+./ibanmanagment/tests/tests_create_update_delete_views.py:46:53: E262 inline comment should start with '# '
+./ibanmanagment/tests/tests_create_update_delete_views.py:47:72: E261 at least two spaces before inline comment
+./ibanmanagment/tests/tests_create_update_delete_views.py:47:73: E262 inline comment should start with '# '
+./ibanmanagment/tests/tests_create_update_delete_views.py:48:37: E231 missing whitespace after ':'
+./ibanmanagment/tests/tests_create_update_delete_views.py:49:13: E128 continuation line under-indented for visual indent
+./ibanmanagment/tests/tests_create_update_delete_views.py:49:24: E231 missing whitespace after ':'
+./ibanmanagment/tests/tests_create_update_delete_views.py:50:26: E231 missing whitespace after ':'
+./ibanmanagment/tests/tests_create_update_delete_views.py:51:21: E231 missing whitespace after ':'
+./ibanmanagment/tests/tests_create_update_delete_views.py:52:22: E231 missing whitespace after ':'
+./ibanmanagment/tests/tests_create_update_delete_views.py:53:25: E231 missing whitespace after ':'
+./ibanmanagment/tests/tests_create_update_delete_views.py:54:25: E231 missing whitespace after ':'
+./ibanmanagment/tests/tests_create_update_delete_views.py:55:9: E124 closing bracket does not match visual indentation
+./ibanmanagment/tests/tests_create_update_delete_views.py:58:106: E261 at least two spaces before inline comment
+./ibanmanagment/tests/tests_create_update_delete_views.py:58:107: E262 inline comment should start with '# '
+./ibanmanagment/tests/tests_create_update_delete_views.py:64:71: E261 at least two spaces before inline comment
+./ibanmanagment/tests/tests_create_update_delete_views.py:64:72: E262 inline comment should start with '# '
+./ibanmanagment/tests/tests_create_update_delete_views.py:70:29: E261 at least two spaces before inline comment
+./ibanmanagment/tests/tests_create_update_delete_views.py:70:30: E262 inline comment should start with '# '
+./ibanmanagment/tests/tests_create_update_delete_views.py:71:66: E231 missing whitespace after ','
+./ibanmanagment/tests/tests_create_update_delete_views.py:71:94: E231 missing whitespace after ','
+./ibanmanagment/tests/tests_create_update_delete_views.py:81:82: E261 at least two spaces before inline comment
+./ibanmanagment/tests/tests_create_update_delete_views.py:87:82: E261 at least two spaces before inline comment
+./ibanmanagment/tests/tests_create_update_delete_views.py:87:83: E262 inline comment should start with '# '
+./ibanmanagment/tests/tests_create_update_delete_views.py:93:82: E261 at least two spaces before inline comment
+./ibanmanagment/tests/tests_create_update_delete_views.py:93:83: E262 inline comment should start with '# '
+./ibanmanagment/tests/tests_create_update_delete_views.py:96:53: E231 missing whitespace after ':'
+./ibanmanagment/tests/tests_create_update_delete_views.py:97:82: E261 at least two spaces before inline comment
+./ibanmanagment/tests/tests_create_update_delete_views.py:97:83: E262 inline comment should start with '# '
+./ibanmanagment/tests/tests_create_update_delete_views.py:99:29: E261 at least two spaces before inline comment
+./ibanmanagment/tests/tests_create_update_delete_views.py:99:30: E262 inline comment should start with '# '
+./ibanmanagment/tests/tests_create_update_delete_views.py:105:72: E261 at least two spaces before inline comment
+./ibanmanagment/tests/tests_create_update_delete_views.py:105:73: E262 inline comment should start with '# '
+./ibanmanagment/tests/tests_create_update_delete_views.py:114:53: E231 missing whitespace after ':'
+./ibanmanagment/tests/tests_create_update_delete_views.py:115:54: E261 at least two spaces before inline comment
+./ibanmanagment/tests/tests_create_update_delete_views.py:115:55: E262 inline comment should start with '# '
+./ibanmanagment/tests/tests_create_update_delete_views.py:116:52: E261 at least two spaces before inline comment
+./ibanmanagment/tests/tests_create_update_delete_views.py:116:53: E262 inline comment should start with '# '
+./ibanmanagment/tests/tests_create_update_delete_views.py:118:39: E261 at least two spaces before inline comment
+./ibanmanagment/tests/tests_create_update_delete_views.py:118:40: E262 inline comment should start with '# '
+./ibanmanagment/tests/tests_form.py:6:1: E302 expected 2 blank lines, found 0
+./ibanmanagment/tests/tests_form.py:13:25: E231 missing whitespace after ':'
+./ibanmanagment/tests/tests_form.py:14:24: E231 missing whitespace after ':'
+./ibanmanagment/tests/tests_form.py:15:26: E231 missing whitespace after ':'
+./ibanmanagment/tests/tests_form.py:26:25: E231 missing whitespace after ':'
+./ibanmanagment/tests/tests_form.py:27:24: E231 missing whitespace after ':'
+./ibanmanagment/tests/tests_form.py:28:26: E231 missing whitespace after ':'
+./ibanmanagment/tests/tests_form.py:32:42: W292 no newline at end of file
+./ibanmanagment/tests/tests_list_views.py:7:1: E302 expected 2 blank lines, found 0
+./ibanmanagment/tests/tests_list_views.py:21:59: E231 missing whitespace after ','
+./ibanmanagment/tests/tests_list_views.py:21:85: E231 missing whitespace after ','
+./ibanmanagment/tests/tests_list_views.py:27:71: E231 missing whitespace after ','
+./ibanmanagment/tests/tests_list_views.py:28:1: W293 blank line contains whitespace
+./ibanmanagment/tests/tests_list_views.py:34:59: E231 missing whitespace after ','
+./ibanmanagment/tests/tests_list_views.py:34:85: E231 missing whitespace after ','
+./ibanmanagment/tests/tests_list_views.py:38:71: W292 no newline at end of file
+./ibanmanagment/tests/tests_model.py:5:1: E302 expected 2 blank lines, found 0
+./ibanmanagment/tests/tests_model.py:16:55: E251 unexpected spaces around keyword / parameter equals
+./ibanmanagment/tests/tests_model.py:16:57: E251 unexpected spaces around keyword / parameter equals
+./ibanmanagment/tests/tests_model.py:17:13: E128 continuation line under-indented for visual indent
+./ibanmanagment/tests/tests_model.py:17:22: E251 unexpected spaces around keyword / parameter equals
+./ibanmanagment/tests/tests_model.py:17:24: E251 unexpected spaces around keyword / parameter equals
+./ibanmanagment/tests/tests_model.py:17:32: E231 missing whitespace after ','
+./ibanmanagment/tests/tests_model.py:17:44: E251 unexpected spaces around keyword / parameter equals
+./ibanmanagment/tests/tests_model.py:17:46: E251 unexpected spaces around keyword / parameter equals
+./ibanmanagment/tests/tests_model.py:17:61: E231 missing whitespace after ','
+./ibanmanagment/tests/tests_model.py:17:68: E251 unexpected spaces around keyword / parameter equals
+./ibanmanagment/tests/tests_model.py:17:70: E251 unexpected spaces around keyword / parameter equals
+./ibanmanagment/tests/tests_model.py:18:13: E128 continuation line under-indented for visual indent
+./ibanmanagment/tests/tests_model.py:18:23: E251 unexpected spaces around keyword / parameter equals
+./ibanmanagment/tests/tests_model.py:18:25: E251 unexpected spaces around keyword / parameter equals
+./ibanmanagment/tests/tests_model.py:18:29: E231 missing whitespace after ','
+./ibanmanagment/tests/tests_model.py:18:40: E251 unexpected spaces around keyword / parameter equals
+./ibanmanagment/tests/tests_model.py:18:42: E251 unexpected spaces around keyword / parameter equals
+./ibanmanagment/tests/tests_model.py:19:13: E128 continuation line under-indented for visual indent
+./ibanmanagment/tests/tests_model.py:19:23: E251 unexpected spaces around keyword / parameter equals
+./ibanmanagment/tests/tests_model.py:19:25: E251 unexpected spaces around keyword / parameter equals
+./ibanmanagment/tests/tests_model.py:20:37: E231 missing whitespace after ','

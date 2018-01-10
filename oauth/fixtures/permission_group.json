@@ -1,0 +1,38 @@
+[
+    {
+        "model":"auth.Permission",
+        "pk":"19",
+        "fields":{
+            "name":"Can add Iban Details",
+            "content_type":"7",
+            "codename":"add_ibandetails"
+        }
+    },
+    {
+        "model":"auth.Permission",
+        "pk":"20",
+        "fields":{
+            "name":"Can change Iban Details",
+            "content_type":"7",
+            "codename":"change_ibandetails"
+        }
+    },
+    {
+        "model":"auth.Permission",
+        "pk":"21",
+        "fields":{
+            "name":"Can delete Iban Details",
+            "content_type":"7",
+            "codename":"delete_ibandetails"
+        }
+    },
+    {
+        "model":"auth.Group",
+        "pk":"1",
+        "fields":{
+            "name":"admin",
+            "permissions":[19,20,21]
+        }
+    }
+]
+

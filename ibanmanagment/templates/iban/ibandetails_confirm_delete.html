@@ -1,0 +1,15 @@
+<div class="container">
+    <div class="row">
+        <div class="col col-sm-12">
+            <label>Are you sure you want to delete {{object}} IBAN?</label>
+        </div>
+        <div class="col col-sm-12">
+            <form action="/deleteiban/{{object.pk}}/" method="post">
+                {% csrf_token %}
+                <input type="hidden" name="id" id="id" value="{{object.pk}}" /> 
+                <input type="submit" class="btn btn-danger" value="Delete" name="delete" />
+                <input type="button" class="btn btn-info" value="Cancel" name="cancel" />
+            </form>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content_title %}<center><h3> Home Page </h3></center>{% endblock %}  
+{% block content %}
+<div class="content-wrapper">
+    <h4> Add New IBAN Detail </h4>
+    <form action="" method="post" novalidate="novalidate" id="iban_create" name="iban_create">
+        {% csrf_token %}
+        {{form.hidden_id}}
+        <div class="row">
+            <div class="col col-sm-12">
+                <div class="col col-sm-6">
+                    <label> {{form.first_name.label}}<span class="text-danger"> * </span></label>
+                    {{form.first_name}}
+                    <span class="error text-danger">{{ form.first_name.errors.as_text|cut:"* " }}</span>
+                </div>
+                <div class="col col-sm-6">
+                    <label class="required"> {{form.last_name.label}}<span class="text-danger"> * </span></label>
+                    {{form.last_name}}
+                    <span class="error text-danger">{{ form.last_name.errors.as_text|cut:"* " }}</span>
+                </div>
+            </div>
+        </div>
+        <div class="row">&nbsp;</div>
+        <div class="row">
+            <div class="col col-sm-12">
+                <div class="col col-sm-6">
+                    <label class="required"> {{form.iban_number.label}}<span class="text-danger"> * </span></label>
+                    {{form.iban_number}}
+                    <span class="error text-danger">{{form.iban_number.errors.as_text|cut:"* "}}</span>
+                </div>
+            </div>
+        </div>
+        <div class="row">&nbsp;</div>
+        <div class="row">
+            <div class="col col-sm-12">
+                <div class="col col-sm-6 float-left">
+                    <input type="submit" class="btn btn-success" value="Add Iban" />
+                    <input type="reset" class="btn btn-info margin-left-right" value="Clear" />                    
+                </div>
+                <div class="col col-sm-6">&nbsp;</div>
+            </div>
+        </div>
+        <div class="row">&nbsp;</div>
+    </form>
+</div>
+{% endblock content %}
+{% block bootstrap_admin_js %}
+    {{block.super}}
+    {{form.media}}
+{% endblock bootstrap_admin_js %}

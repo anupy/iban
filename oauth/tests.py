@@ -12,13 +12,14 @@ from django.contrib import messages
 from django.contrib.messages.storage.fallback import FallbackStorage
 from django.core.urlresolvers import reverse
 
+
 class OauthTestCase(TestCase):
     def setUp(self):
-        #If only response is required.
+        # If only response is required.
         self.client = Client()
         # Every test needs access to the request factory.
         self.factory = RequestFactory()
-        #sample json, google like data.
+        # sample json, google like data.
         self.google_profile = {
             'gender': 'male',
             'profile': 'https://plus.google.com/116778214376484098997',
@@ -58,20 +59,20 @@ class OauthTestCase(TestCase):
         self.assertIsInstance(user.groups.all()[0], Group)
         self.assertFalse(user.is_active)
 
-    #Exceptional in case is_active is false
+    # Exceptional in case is_active is false
     def check_account_exist_or_create_test_is_active(self):
         self.google_profile['email'] = "inactive@gmail.com"
         user = AuthView.check_account_exist_or_create(self.request,self.google_profile)
         self.assertFalse(user)
 
-    #Exceptional in case is_superadmin is true
+    # Exceptional in case is_superadmin is true
     def check_account_exist_or_create_test_is_superadmin(self):
-        #with self.assertRaisesMessage(Exception, 'User is non admin.'):
+        # with self.assertRaisesMessage(Exception, 'User is non admin.'):
         self.google_profile['email'] = "anupy27@gmail.com"
         user = AuthView.check_account_exist_or_create(self.request,self.google_profile)
         self.assertTrue(user)
 
-    #Exceptional in case is_admin is true
+    # Exceptional in case is_admin is true
     def check_account_exist_or_create_test_is_admin(self):
         self.google_profile['email'] = "noadmin@gmail.com"
         user = AuthView.check_account_exist_or_create(self.request,self.google_profile)

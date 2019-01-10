@@ -60,7 +60,7 @@ class GoogleOAuth:
         except Exception as e:
             return False
 
-    # Authenitication and get Token
+    # Authentication and get Token
     def google_authenticate(request, settings):
         """Initiate call to google to get Authentication Token  
 

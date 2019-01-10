@@ -11,9 +11,11 @@ from django.utils.http import *
 from django.contrib.auth.models import User, Group
 from ibanproject.functions import get_or_none
 from ibanproject.GoogleOAuth.Google import GoogleOAuth
-# Create your views here.
+from django.views import View
 
-class AuthView():
+
+# Create your views here.
+class AuthView(View):
 
     def login(request):
         if request.user.is_authenticated():
@@ -25,7 +27,7 @@ class AuthView():
         logout(request)
         return HttpResponseRedirect(settings.LOGIN_REDIRECT_URL)
 
-    def check_account_exist_or_create(request,google_profile):
+    def check_account_exist_or_create(request, google_profile):
         """ This function is to check Active User existance if not creation and provide Administrator access to new user.
 
         This function is to check Active User existance if not creation and provide Administrator access to new user.
@@ -45,18 +47,19 @@ class AuthView():
         try:
             user = get_or_none(User,email=google_profile['email'])
             if user:
-                #Check User must be of either superuser or admin user
+                # Check User must be of either superuser or admin user
                 if not user.is_active:
                     messages.add_message(request, messages.WARNING, warning_messages['account_inactive'])
                     return False
-                #Check user is admin or super admin
+                # Check user is admin or super admin
                 elif not user.is_superuser and not user.is_admin():
                     messages.add_message(request, messages.WARNING, warning_messages['account_non_admin'])
                     return False
                 else:
                     return user
             else:
-                with transaction.atomic():#Should not proceed further in case of error either of one table.
+                # Should not proceed further in case of error either of one table.
+                with transaction.atomic():
                     profileusername = google_profile['email'].split("@")
                     username = profileusername[0] if len(profileusername) > 1 else google_profile['email']
                     user = User.objects.create_user(first_name = google_profile['given_name'],
@@ -65,7 +68,7 @@ class AuthView():
                                         email=google_profile['email'],
                                         is_active=False,
                                         password=username)
-                    #Add into group of administrator.
+                    # Add into group of administrator.
                     groups = Group.objects.filter(name='admin')
                     if groups.count():
                         group = groups[0]
@@ -133,14 +136,18 @@ class AuthView():
             messages.add_message(request, messages.ERROR, error_messages['account_authentication_failed'])
             return HttpResponseRedirect('{loginfailed}'.format(loginfailed = settings.LOGIN_FAILED_URL))
 
+
 def server_error(request):
     return render(request, 'errors/500.html')
+
 
 def not_found(request):
     return render(request, 'errors/404.html')
 
+
 def permission_denied(request):
     return render(request, 'errors/403.html')
+
 
 def bad_request(request):
     return render(request, 'errors/400.html')

@@ -3,6 +3,7 @@ from ibanmanagment.models import IbanDetails
 from .forms import *
 # Register your models here.
 
+
 @admin.register(IbanDetails)
 class IbanDetailsAdmin(admin.ModelAdmin):
     form = IbanDetailsForm

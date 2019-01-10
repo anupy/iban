@@ -14,12 +14,13 @@ from django.urls import reverse_lazy
 from django.core.exceptions import PermissionDenied
 # Create your views here.
 
+
 class DashBoardView(ListView):
     model = IbanDetails
     template_name = 'iban/dashboard.html'    
     paginate_by = 10
 
-    @method_decorator(login_required) #Login check
+    @method_decorator(login_required)  # Login check
     def dispatch(self, request, *args, **kwargs):
         return super(DashBoardView, self).dispatch(request, *args, **kwargs)
 
@@ -30,10 +31,12 @@ class DashBoardView(ListView):
         """
         try:
             return IbanDetails.objects.filter(creator=self.request.user).order_by('-created_at')
-        except:
+        except :
             return []
 
+
 class CreateIban(CreateView):
+
     model = IbanDetails
     form_class = IbanDetailsForm
     template_name = 'iban/create_iban.html'
@@ -50,7 +53,9 @@ class CreateIban(CreateView):
         messages.success(self.request, success_messages['iban_created'])
         return super(CreateIban, self).form_valid(form)
 
+
 class UpdateIban(UpdateView):
+
     model = IbanDetails
     form_class = IbanDetailsForm
     template_name = 'iban/create_iban.html'
@@ -77,6 +82,7 @@ class UpdateIban(UpdateView):
     def form_valid(self, form):
         messages.success(self.request, success_messages['iban_updated'])
         return super(UpdateIban, self).form_valid(form)
+
 
 class DeleteIban(DeleteView):
     model = IbanDetails
@@ -108,7 +114,8 @@ class DeleteIban(DeleteView):
         messages.success(self.request, success_messages['iban_deleted']) #Messages gets displayed, If IBAN successfully gets deleted. 
         return super(DeleteIban, self).post(*args, **kwargs)
 
-class CommonCheck:
+
+class CommonCheck(Object):
 
     @login_required(login_url=settings.LOGIN_URL)
     def checkuniqueiban(request):
@@ -125,10 +132,10 @@ class CommonCheck:
  
         """
         iban = IbanDetails.objects.values('id').filter(iban_number__iexact=request.POST.get('iban_number'))
-        if(iban and 'iban_id' in request.POST and request.POST.get('iban_id') and request.POST.get('iban_id') != ""):
+        if iban and 'iban_id' in request.POST and request.POST.get('iban_id') and request.POST.get('iban_id') != "":
             iban = iban.exclude(pk=int(request.POST.get('iban_id')))
 
-        if (not iban):
+        if not iban:
             return HttpResponse('true')
         else:
             return HttpResponse('false')

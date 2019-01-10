@@ -2,8 +2,11 @@ from django import forms
 from ibanmanagment.models import IbanDetails
 from django.forms import widgets
 from schwifty import IBAN
+
+
 class IbanDetailsForm(forms.ModelForm):
-    #@TODO :: We might need to implement live API to verify.
+
+    # @TODO :: We might need to implement live API to verify.
     # We need to purchase this service.
     # https://www.iban.com/validation-api.html Need to discuss.
     def clean_iban_number(self):
@@ -42,5 +45,6 @@ class IbanDetailsForm(forms.ModelForm):
                 'required':'Please Enter Iban Number.'
             }
         }
+
     class Media:
         js = (('js/iban.js','js/iban_details.js',))

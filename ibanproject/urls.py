@@ -34,7 +34,7 @@ urlpatterns = [
     url(r'^deleteiban/(?P<pk>\d+)/$', DeleteIban.as_view(), {}, name='deleteiban'),
 ]+ static(settings.STATIC_URL, document_root=settings.STATIC_ROOT) + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
-#Errors pages has been hanlded from here.
+# Errors pages has been hanlded from here.
 handler404 = 'oauth.views.not_found'
 handler500 = 'oauth.views.server_error'
 handler403 = 'oauth.views.permission_denied'
